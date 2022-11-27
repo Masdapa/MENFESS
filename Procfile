@@ -1,1 +1,1 @@
-worker: npm i && node main.js
+worker: yarn && node main.js
