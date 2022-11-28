@@ -1,11 +1,11 @@
 FROM node:lts-buster
 
-RUN pkg update && \
+RUN pkg-get update && \
   pkg install -y \
   ffmpeg \
   imagemagick \
   webp && \
-  pkg upgrade -y && \
+  pkg-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
 
 COPY package.json .
